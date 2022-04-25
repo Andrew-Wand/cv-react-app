@@ -1,7 +1,7 @@
 import { Component } from "react";
 
 
-class Education extends Component {
+class Experience extends Component {
     constructor(props) {
         super(props);
         this.onSaveClick = this.onSaveClick.bind(this);
@@ -18,18 +18,18 @@ class Education extends Component {
 
     render() {
         return (
-            <div className="container education">
-                <h2>Education</h2>
+            <div className="container experience">
+                <h2>Experience</h2>
                 
                 <hr />
                 
                 <form>
                     <div>
                         <div>
-                            <input type='text' name="schoolName" placeholder="School Name" id="school-name"></input>
+                            <input type='text' name="companyName" placeholder="Company Name" id="company-name"></input>
                         </div>
                         <div>
-                            <input type='text' name="majorName" placeholder="Major Name" id="major-name"></input>
+                            <input type='text' name="positionTitle" placeholder="Position Title" id="position-title"></input>
                         </div>
                     </div>
 
@@ -37,7 +37,13 @@ class Education extends Component {
 
                     <div>
                         <div>
-                            <input type='date' name="dateStudy" placeholder="Date of Study" id="date-study"></input>
+                            <label htmlFor="from-experience">From:</label>
+                            <input type='date' name="fromExperience" placeholder="From" id="from-experience"></input>
+                        </div>
+
+                        <div>
+                            <label htmlFor="from-experience">To:</label>
+                            <input type='date' name="toExperience" placeholder="To" id="to-experience"></input>
                         </div>
                     </div>
 
@@ -61,4 +67,4 @@ class Education extends Component {
 
 }
 
-export default Education;
+export default Experience;
