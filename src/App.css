@@ -1,6 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #082032;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 1.2em;
+}
+
+.container {
+  margin: 3rem 0px;
+}
 
 
-.modal-container{
+.content-container {
+  color: #fff;
+  align-items: center;
+  display: flex;
+  flex: 1 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 5%;
+
+}
+
+/* Header */
+.header-container {
+  text-align: center;
+  color: #fff;
+}
+
+/* Form */
+.content {
+  background-color: #2C394B;
+  border-radius: 20px;
+  /* height: 100%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  padding: 4rem;
+  border-radius: 20px;
+   */
+
+   display: flex;
+flex-direction: column;
+justify-content: flex-start;
+/* align-items: center; */
+max-width: 100rem;
+min-height: 50rem;
+padding: 5rem;
+/* width: 100%; */
+ 
+ 
+  
+}
+
+
+
+.left-side {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  margin-right: 4em;
+}
+
+.right-side-container {
+  display: grid;
+  padding-left: 3.6rem;
+  row-gap: 4rem;
+  
+}
+
+.right-side {
+  display: grid;
+  row-gap: 1.8rem;
+  /* padding: 10px; */
+  
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  column-gap: 4rem;
+
+}
+
+.input {
+  display: flex;
+flex-direction: column;
+/* overflow: auto; */
+padding:  .2rem .1rem;
+
+
+}
+
+input {
+  padding: 1em 1em;
+  border-radius: 5px;
+}
+
+.save-button {
+	background:linear-gradient(to bottom, #79bbff 5%, #719FB0 100%);
+	background-color:#719FB0;
+	border-radius:5px;
+	border:1px solid #337bc4;
+	display: inline-block;
+  
+
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:14px;
+	font-weight:bold;
+	padding: 8px 10px;
+	text-decoration:none;
+	text-shadow:0px 2px 0px #528ecc;
+  margin-top: 8em;
+}
+.save-button:hover {
+	background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+	background-color:#378de5;
+}
+.save-button:active {
+	position:relative;
+	top:1px;
+}
+
+.save-button-container { 
+  
+}
+
+
+
+
+/* General info */
+
+/* Experience */
+
+/* Education */
+
+
+
+
+
+
+/* Modal */
+.modal-container {
   position: fixed;
   top: 0;
   left: 0;
@@ -13,8 +160,7 @@
   overflow: scroll;
 }
 
-.modal{
-  position: relative;
+.modal {
   background-color: white;
   padding: 0 10px;
   max-width: 80vw;
@@ -24,3 +170,36 @@
 .hide {
   display: none;
 }
+
+.preview {
+  display: flex;
+  justify-content: center;
+}
+
+
+  .preview-btn {
+    box-shadow:inset 0px 1px 0px 0px #97c4fe;
+    background:linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+    background-color:#3d94f6;
+    border-radius: .8em;
+    border:1px solid #337fed;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size: 1em;
+    font-weight:bold;
+    padding: 1.2rem 2.4rem;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #1570cd;
+    
+  }
+  .preview-btn:hover {
+    background:linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
+    background-color:#1e62d0;
+  }
+  .preview-btn:active {
+    position:relative;
+    top:1px;
+  }
+  

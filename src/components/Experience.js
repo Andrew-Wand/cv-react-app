@@ -19,40 +19,44 @@ class Experience extends Component {
     render() {
         return (
             <div className="container experience">
-                <h2>Experience</h2>
-                
-                <hr />
-                
-                <form>
+                <form autocomplete="off">
                     <div>
-                        <div>
-                            <input type='text' name="companyName" placeholder="Company Name" id="company-name"></input>
+                        <div className="left-side">
+                            <h2>Experience</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus porro corporis corrupti reiciendis, iusto temporibus?</p>
                         </div>
-                        <div>
-                            <input type='text' name="positionTitle" placeholder="Position Title" id="position-title"></input>
+                        
+                        
+                        <div className="right-side-container">
+                            <div className="right-side">
+                                <div className="row">
+                                    <div className="input">
+                                        <input type='text' name="companyName" placeholder="Company Name" id="company-name"></input>
+                                    </div>
+                                    <div className="input">
+                                        <input type='text' name="positionTitle" placeholder="Position Title" id="position-title"></input>
+                                    </div>
+                                </div>
+                            
+                            </div>
                         </div>
+                        
+                        
+                        
+                        
+                        
+                        
                     </div>
 
-                    <hr />
+                    
 
-                    <div>
-                        <div>
-                            <label htmlFor="from-experience">From:</label>
-                            <input type='date' name="fromExperience" placeholder="From" id="from-experience"></input>
-                        </div>
-
-                        <div>
-                            <label htmlFor="from-experience">To:</label>
-                            <input type='date' name="toExperience" placeholder="To" id="to-experience"></input>
-                        </div>
-                    </div>
-
-                    <div>
+                    <div className="save-button-container">
                         <button type="submit" className="save-button" onClick={this.onSaveClick}>Save</button>
                     </div>
                     
 
                 </form>
+               <hr />
             </div>
         );
     }

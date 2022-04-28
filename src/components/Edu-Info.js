@@ -19,34 +19,49 @@ class Education extends Component {
     render() {
         return (
             <div className="container education">
-                <h2>Education</h2>
                 
-                <hr />
                 
-                <form>
+                
+                <form autocomplete="off">
                     <div>
-                        <div>
-                            <input type='text' name="schoolName" placeholder="School Name" id="school-name"></input>
+                        <div className="left-side">
+                            <h2>Education</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, unde. Molestias veritatis esse voluptatem obcaecati nulla cum eaque ullam odit.</p>
                         </div>
-                        <div>
-                            <input type='text' name="majorName" placeholder="Major Name" id="major-name"></input>
+
+                        <div className="right-side-container">
+                            <div className="right-side">
+                                <div className="row">
+                                    <div className="input">
+                                        <input type='text' name="schoolName" placeholder="School Name" id="school-name"></input>
+                                    </div>
+                                    <div className="input">
+                                    <input type='text' name="majorName" placeholder="Major Name" id="major-name"></input>
+                                    </div>
+                                </div>
+                                <div className="row">
+                                    <div className="input">
+                                    <input type='date' name="dateStudy" placeholder="Date of Study" id="date-study"></input>
+                                    </div>
+                                   
+                                </div>
+                            </div>
                         </div>
+
+                       
+                    
                     </div>
 
-                    <hr />
 
-                    <div>
-                        <div>
-                            <input type='date' name="dateStudy" placeholder="Date of Study" id="date-study"></input>
-                        </div>
-                    </div>
+                    
 
-                    <div>
+                    <div className="save-button-container">
                         <button type="submit" className="save-button" onClick={this.onSaveClick}>Save</button>
                     </div>
                     
 
                 </form>
+                <hr />
             </div>
         );
     }

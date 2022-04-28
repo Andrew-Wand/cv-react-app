@@ -103,16 +103,16 @@ educationHandler() {
     });
 }
 
-// Function for preview button
-preview() {
-  let modal = document.getElementById('modal');
-  modal.style.overflowY = 'scroll';
-  let modal2 = document.getElementById('modal2');
-  modal2.style.top = '200px';
-  document.body.style.overflow = 'hidden';
-  modal.classList.remove('hide');
-}
 
+    // Function for preview button
+    preview() {
+      let modal = document.getElementById('modal');
+      modal.style.overflowY = 'scroll';
+      let modal2 = document.getElementById('modal2');
+      modal2.style.top = '200px';
+      document.body.style.overflow = 'hidden';
+      modal.classList.remove('hide');
+    }
 
 
 
@@ -122,15 +122,21 @@ preview() {
       <div>
         <Header />
 
-        <div>
-          <button onClick={this.preview} id='preview'>Preview</button>
+       <div className='content-container'>
+<div className='content'>
+          <GeneralInfo clickHandler = {this.generalInfoHandler} />
+
+          <Experience clickHandler = {this.experienceHandler}/>
+
+          <Education clickHandler = {this.educationHandler}/>
+
+                  <div className='preview'>
+                        <button onClick={this.preview} id='preview' className='preview-btn' >Preview</button>
+                    </div>
         </div>
-
-        <GeneralInfo clickHandler = {this.generalInfoHandler} />
-
-        <Experience clickHandler = {this.experienceHandler}/>
-
-        <Education clickHandler = {this.educationHandler}/>
+       </div>
+        
+        
 
         <Modal info={this.state} />
       </div>
